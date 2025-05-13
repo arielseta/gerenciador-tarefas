@@ -1,0 +1,32 @@
+# Laravel backend
+app_tarefas/vendor/
+app_tarefas/node_modules/
+app_tarefas/.env
+app_tarefas/.phpunit.result.cache
+app_tarefas/storage/*.key
+app_tarefas/storage/*.log
+app_tarefas/storage/framework/*
+!app_tarefas/storage/framework/.gitignore
+app_tarefas/storage/logs/*
+!app_tarefas/storage/logs/.gitignore
+app_tarefas/bootstrap/cache/*
+!app_tarefas/bootstrap/cache/.gitignore
+app_tarefas/public/storage
+
+# Node (Quasar frontend)
+app_tarefas_frontend/node_modules/
+app_tarefas_frontend/dist/
+app_tarefas_frontend/.quasar/
+app_tarefas_frontend/.env
+app_tarefas_frontend/.output/
+app_tarefas_frontend/.cache/
+
+# IDEs / Editor configs
+**/.idea/
+**/.vscode/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
