@@ -2,9 +2,26 @@
 
 Aplicação full stack desenvolvida com Laravel (backend) e Quasar Framework (frontend), que permite gerenciar tarefas com autenticação, listagem, criação, edição, e exclusão.
 
-## 🗂 Estrutura do Projeto
+---
 
-O repositório é dividido em dois diretórios principais:
+## 🛠️ Tecnologias Utilizadas
+
+### Backend – Laravel 12
+- PHP 8.1+
+- Laravel Sanctum (autenticação via API)
+- Migrations e Seeders
+- Testes automatizados com PHPUnit
+- API RESTful protegida por middleware
+
+### Frontend – Quasar Framework (Vue.js)
+- Vue 3 Composition API
+- Quasar UI para layout responsivo
+- Integração com Laravel via Fetch API
+- Controle de sessão e autenticação no client
+
+---
+
+## 🗂 Estrutura do Projeto
 
 ```
 gerenciador-tarefas/
@@ -14,112 +31,62 @@ gerenciador-tarefas/
 
 ---
 
-## ⚙️ Requisitos
+## 🔐 Usuário para Testes
 
-- PHP >= 8.1
-- Composer
-- Node.js >= 16
-- NPM ou Yarn
-- Laravel 12
-- Quasar CLI
+Criado via seeder:
+
+- **Email:** `admin@teste.com`  
+- **Senha:** `senha123`
 
 ---
 
-## 🚀 Como rodar o projeto
+## ⚙️ Funcionalidades Implementadas
 
-### 🔧 Backend (Laravel)
+| Funcionalidade                         | Status |
+|----------------------------------------|--------|
+| Autenticação com Laravel Sanctum       | ✅     |
+| Login, Logout e persistência de sessão | ✅     |
+| CRUD completo de Tarefas via API       | ✅     |
+| Filtros por status                     | ✅     |
+| Interface responsiva com Quasar        | ✅     |
+| Proteção de rotas                      | ✅     |
+| Testes com PHPUnit                     | ✅     |
+| Seeders para status e usuário          | ✅     |
 
-1. Acesse o diretório:
+---
+
+## ▶️ Como Executar
+
+### Backend
 
 ```bash
 cd app_tarefas
-```
-
-2. Instale as dependências:
-
-```bash
 composer install
-```
-
-3. Copie o arquivo `.env` e configure:
-
-```bash
 cp .env.example .env
-```
-
-4. Gere a chave da aplicação:
-
-```bash
 php artisan key:generate
-```
-
-5. Execute as migrações e seeders:
-
-```bash
 php artisan migrate --seed
-```
-
-6. Inicie o servidor:
-
-```bash
 php artisan serve
 ```
 
----
-
-### 🎨 Frontend (Quasar)
-
-1. Acesse o diretório:
+### Frontend
 
 ```bash
 cd app_tarefas_frontend
-```
-
-2. Instale as dependências:
-
-```bash
 npm install
-# ou
-yarn
-```
-
-3. Inicie a aplicação:
-
-```bash
 quasar dev
 ```
 
-> A aplicação frontend estará disponível em `http://localhost:9000`.
-
 ---
 
-## 🔐 Usuário para Testes
+## 🧪 Testes Automatizados
 
-Usuário padrão criado via seeder para testes:
-
-- **Email**: `admin@teste.com`
-- **Senha**: `senha123`
-
----
-
-## ✅ Funcionalidades
-
-- Autenticação via Laravel Sanctum
-- Criação, edição, listagem e exclusão de tarefas
-- Filtros por status
-- Layout responsivo com Quasar Framework
-- Proteção de rotas e verificação de sessão
-- Testes automatizados com PHPUnit
-
----
-
-## 🧪 Testes
-
-Para rodar os testes (Laravel):
+Executar:
 
 ```bash
 php artisan test
 ```
+
+Todos os testes de criação, listagem, edição e exclusão de tarefas estão implementados e passando com sucesso.
 
 ---
 
