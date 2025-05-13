@@ -128,7 +128,7 @@ php artisan test
 Desenvolvido por **Ariel Seta**
 
 - 🔗 [LinkedIn](https://br.linkedin.com/in/arielseta)
-- 💻 [GitHub](https://github.com/arielseta)
+- 💻 [Portfólio](https://arielseta.github.io/)
 
 ---
 
